@@ -1,0 +1,9 @@
+/*.debhelper
+/*.log
+/*.substvars
+/files
+
+/lxqt-qtplugin/
+/lxqt-qtplugin-dbg/
+/lxqt-qtplugin-qt5/
+/lxqt-qtplugin-qt5-dbg/
