@@ -50,20 +50,3 @@ Description: LXQt system integration plugin for Qt (debug symbols)
  .
  This package provides the debugging symbols.
 
-# ---- to be removed in 2016 -----
-
-Package: lxqt-qtplugin-qt5
-Depends: lxqt-qtplugin, ${misc:Depends}
-Priority: extra
-Section: oldlibs
-Architecture: all
-Description: lxqt-qtplugin transitional package
- Empty package to facilitate upgrades, can be safely removed.
-
-Package: lxqt-qtplugin-qt5-dbg
-Depends: lxqt-qtplugin-dbg, ${misc:Depends}
-Priority: extra
-Section: oldlibs
-Architecture: all
-Description: lxqt-qtplugin transitional package (dbg)
- Empty package to facilitate upgrades, can be safely removed.
