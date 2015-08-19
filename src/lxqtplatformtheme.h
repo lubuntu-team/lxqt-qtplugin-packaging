@@ -24,7 +24,7 @@
  * Boston, MA 02110-1301 USA
  *
  * END_COMMON_COPYRIGHT_HEADER */
- 
+
 #ifndef LXQTPLATFORMTHEME_H
 #define LXQTPLATFORMTHEME_H
 
@@ -48,7 +48,7 @@ public:
     virtual bool usePlatformNativeDialog(DialogType type) const;
     // virtual QPlatformDialogHelper *createPlatformDialogHelper(DialogType type) const;
 
-    // virtual const QPalette *palette(Palette type = SystemPalette) const;
+    virtual const QPalette *palette(Palette type = SystemPalette) const;
 
     virtual const QFont *font(Font type = SystemFont) const;
 
