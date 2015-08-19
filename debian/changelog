@@ -1,20 +1,20 @@
-lxqt-qtplugin (0.9.0+20150819-2) unstable; urgency=medium
+lxqt-qtplugin (0.9.0+20150819-1) unstable; urgency=medium
 
   [ Alf Gaida ]
-  * initial debian files
-  * only rebuild
-	- Upstream version 0.8.0.
-	- Min Qt version 5.3.2.
-	- Min liblxqt-qt5-dev version 0.8.0.
-	- removed build dependency libegl1-mesa-dev, as the Qt
-	bug is fixed.
-	- bump standards to 3.9.6.
-	- Short descriptions fixed
+  * Initial debian files
+  * Rebuild only.
+    - Upstream version 0.8.0.
+    - Min Qt version 5.3.2.
+    - Min liblxqt-qt5-dev version 0.8.0.
+    - removed build dependency libegl1-mesa-dev, as the Qt
+      bug is fixed.
+    - bump standards to 3.9.6.
+    - Short descriptions fixed
   * new version 0.9.0 packages renamed debian $foo fixed added
     source/options.
   * Some cleanup in debian $foo.
-  * some changes in debian $foo.
-  * drop transitional packages.
+  * Some changes in debian $foo.
+  * Drop transitional packages.
 
   [ ChangZhuo Chen (陳昌倬) ]
   * Initial release. (Closes: #747604)
@@ -27,5 +27,6 @@ lxqt-qtplugin (0.9.0+20150819-2) unstable; urgency=medium
   [ Yukiharu YABUKI ]
   * Clarify License for 'LGPL-2.1-or-3-with-Digia-1.1-exception'.
   * Added a uploader.
+  * Improve debian/changelog
 
- -- Yukiharu YABUKI <yyabuki@debian.org>  Thu, 20 Aug 2015 05:23:51 +0900
+ -- Yukiharu YABUKI <yyabuki@debian.org>  Thu, 20 Aug 2015 05:29:05 +0900
