@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.11)
+cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 project(lxqt-qtplugin)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -10,11 +10,7 @@ find_package(Qt5LinguistTools REQUIRED QUIET)
 
 find_package(lxqt REQUIRED QUIET)
 
-include(${LXQT_USE_FILE})
-
-if(CMAKE_COMPILER_IS_GNUCXX)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-exceptions -Wl,-no-undefined -Wall")
-endif()
+include(LXQtCompilerSettings NO_POLICY_SCOPE)
 
 add_subdirectory(src)
 
