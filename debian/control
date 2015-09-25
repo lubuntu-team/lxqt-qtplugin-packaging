@@ -8,7 +8,7 @@ Priority: optional
 Build-Depends: debhelper (>= 9),
                cmake (>= 3.0.2),
                libkf5windowsystem-dev,
-               liblxqt0-dev,
+               liblxqt0-dev (>= 0.9.0+20150911),
                libqt5x11extras5-dev,
                libqt5xdg-dev,
                libx11-dev,
@@ -29,7 +29,7 @@ Description: LXQt system integration plugin for Qt
  With this plugin, all Qt-based programs can adopt settings of
  LXQt, such as the icon theme.
  .
- This package provides the lxqt qtplugin interface. 
+ This package provides the lxqt qtplugin interface.
 
 Package: lxqt-qtplugin-dbg
 Architecture: any
