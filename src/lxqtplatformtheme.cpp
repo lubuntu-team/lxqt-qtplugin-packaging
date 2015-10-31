@@ -214,10 +214,10 @@ const QPalette *LXQtPlatformTheme::palette(Palette type) const {
 }
 
 const QFont *LXQtPlatformTheme::font(Font type) const {
-	// qDebug() << "font()" << type << SystemFont;
+    // qDebug() << "font()" << type << SystemFont;
     if(type == SystemFont && !fontStr_.isEmpty()) {
-		// NOTE: for some reason, this is not called by Qt when program startup.
-		// So we do QApplication::setFont() manually.
+        // NOTE: for some reason, this is not called by Qt when program startup.
+        // So we do QApplication::setFont() manually.
         return &font_;
     }
     else if(type == FixedFont && !fixedFontStr_.isEmpty()) {
@@ -291,13 +291,10 @@ QVariant LXQtPlatformTheme::themeHint(ThemeHint hint) const {
         break;
     case ContextMenuOnMouseRelease:
         break;
-#if QT_VERSION >= QT_VERSION_CHECK(5, 3, 0)
-    // this was introduced in Qt 5.3.
     case MousePressAndHoldInterval:
         break;
     case MouseDoubleClickDistance:
         break;
-#endif
     default:
         break;
     }
