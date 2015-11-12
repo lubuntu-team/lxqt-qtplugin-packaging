@@ -1,7 +1,7 @@
 Source: lxqt-qtplugin
 Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
 Uploaders: Alf Gaida <agaida@siduction.org>,
-           ChangZhuo Chen (陳昌倬) <czchen@gmail.com>,
+           ChangZhuo Chen (陳昌倬) <czchen@debian.org>,
            Yukiharu YABUKI <yyabuki@debian.org>
 Section: x11
 Priority: optional
@@ -29,7 +29,7 @@ Description: LXQt system integration plugin for Qt
  With this plugin, all Qt-based programs can adopt settings of
  LXQt, such as the icon theme.
  .
- This package provides the lxqt qtplugin interface. 
+ This package provides the lxqt qtplugin interface.
 
 Package: lxqt-qtplugin-dbg
 Architecture: any
