@@ -7,6 +7,7 @@ Section: x11
 Priority: optional
 Build-Depends: debhelper (>= 9),
                cmake (>= 3.0.2),
+               libdbusmenu-qt5-dev,
                libkf5windowsystem-dev,
                liblxqt0-dev (>= 0.10.0),
                libqt5x11extras5-dev,
