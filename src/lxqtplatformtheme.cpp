@@ -49,7 +49,6 @@
 LXQtPlatformTheme::LXQtPlatformTheme():
     settingsWatcher_(NULL)
 {
-    // qDebug() << "LXQT Platform Theme loaded";
     // When the plugin is loaded, it seems that the app is not yet running and
     // QThread environment is not completely set up. So creating filesystem watcher
     // does not work since it uses QSocketNotifier internally which can only be
@@ -106,14 +105,12 @@ void LXQtPlatformTheme::loadSettings() {
     if(!fontStr_.isEmpty()) {
         if(font_.fromString(fontStr_))
             QApplication::setFont(font_); // it seems that we need to do this manually.
-        // qDebug() << "font: " << font_.toString();
     }
 
     // FixedFont
     fixedFontStr_ = settings.value(QLatin1String("fixedFont")).toString();
     if(!fixedFontStr_.isEmpty()) {
         fixedFont_.fromString(fixedFontStr_);
-        // qDebug() << "fixedFont: " << fixedFont_.toString();
     }
 
     // mouse
@@ -214,10 +211,9 @@ const QPalette *LXQtPlatformTheme::palette(Palette type) const {
 }
 
 const QFont *LXQtPlatformTheme::font(Font type) const {
-	// qDebug() << "font()" << type << SystemFont;
     if(type == SystemFont && !fontStr_.isEmpty()) {
-		// NOTE: for some reason, this is not called by Qt when program startup.
-		// So we do QApplication::setFont() manually.
+        // NOTE: for some reason, this is not called by Qt when program startup.
+        // So we do QApplication::setFont() manually.
         return &font_;
     }
     else if(type == FixedFont && !fixedFontStr_.isEmpty()) {
@@ -227,7 +223,6 @@ const QFont *LXQtPlatformTheme::font(Font type) const {
 }
 
 QVariant LXQtPlatformTheme::themeHint(ThemeHint hint) const {
-    // qDebug() << "themeHint" << hint;
     switch (hint) {
     case CursorFlashTime:
         return cursorFlashTime_;
@@ -258,14 +253,12 @@ QVariant LXQtPlatformTheme::themeHint(ThemeHint hint) const {
     case ItemViewActivateItemOnSingleClick:
         return QVariant(singleClickActivate_);
     case SystemIconThemeName:
-        // qDebug() << "iconTheme" << iconTheme_;
         return iconTheme_;
     case SystemIconFallbackThemeName:
         return "hicolor";
     case IconThemeSearchPaths:
         return xdgIconThemePaths();
     case StyleNames:
-        // qDebug() << "StyleNames";
         return QStringList() << style_;
     case WindowAutoPlacement:
         break;
@@ -291,13 +284,10 @@ QVariant LXQtPlatformTheme::themeHint(ThemeHint hint) const {
         break;
     case ContextMenuOnMouseRelease:
         break;
-#if QT_VERSION >= QT_VERSION_CHECK(5, 3, 0)
-    // this was introduced in Qt 5.3.
     case MousePressAndHoldInterval:
         break;
     case MouseDoubleClickDistance:
         break;
-#endif
     default:
         break;
     }
