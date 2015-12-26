@@ -31,15 +31,3 @@ Description: LXQt system integration plugin for Qt
  LXQt, such as the icon theme.
  .
  This package provides the lxqt qtplugin interface.
-
-Package: lxqt-qtplugin-dbg
-Architecture: any
-Section: debug
-Priority: extra
-Depends: ${misc:Depends},
-         lxqt-qtplugin (= ${binary:Version})
-Description: LXQt system integration plugin for Qt (debug symbols)
- With this plugin, all Qt-based programs can adopt settings of
- LXQt, such as the icon theme.
- .
- This package provides the debugging symbols.
