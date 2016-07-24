@@ -19,7 +19,7 @@ Build-Depends: debhelper (>= 9),
                pkg-config,
                qtbase5-private-dev,
                qttools5-dev,
-               qttools5-dev-tools,
+               qttools5-dev-tools
 Standards-Version: 3.9.8
 Vcs-Browser: https://anonscm.debian.org/git/pkg-lxqt/lxqt-qtplugin.git/?h=debian/experimental
 Vcs-Git: https://anonscm.debian.org/git/pkg-lxqt/lxqt-qtplugin.git -b debian/experimental
@@ -33,4 +33,4 @@ Description: LXQt system integration plugin for Qt
  With this plugin, all Qt-based programs can adopt settings of
  LXQt, such as the icon theme.
  .
- This package provides the lxqt qtplugin interface.
+ This package provides the LXQt qtplugin interface.
