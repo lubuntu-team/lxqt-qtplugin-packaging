@@ -1,3 +1,16 @@
+lxqt-qtplugin (0.11.0-1) experimental; urgency=medium
+
+  * Cherry-picking upstream release 0.11.0.
+  * Added build dependency libqt5svg5-dev
+  * Bumped compat to 10
+  * Bumped minimum version debhelper (>= 10)
+  * Bumped minimum version libqtxdg-dev (>= 2.0.0)
+  * Bumped minimum version libqt5xdgiconloader-dev (>= 2.0.0)
+  * Bumped build dependency liblxqt-dev (>= 0.11.0)
+  * Removed --parallel from rules, standard in compat 10
+  
+ -- Alf Gaida <agaida@siduction.org>  Sun, 25 Sep 2016 19:02:25 +0200
+
 lxqt-qtplugin (0.10.96~8-g411f696-1) experimental; urgency=medium
 
   * Cherry-picking upstream version 0.10.96~8-g411f696. 
