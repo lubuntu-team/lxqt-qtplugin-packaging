@@ -1,3 +1,10 @@
+lxqt-qtplugin (0.11.0-2) experimental; urgency=medium
+
+  * Added Multi-Arch: same, following the Multiarch hinter
+  * Removed minimum version from libqt5xdgiconloader-dev
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 27 Sep 2016 22:42:15 +0200
+
 lxqt-qtplugin (0.11.0-1) experimental; urgency=medium
 
   * Cherry-picking upstream release 0.11.0.

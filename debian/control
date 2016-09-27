@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 10),
                libqt5svg5-dev,
                libqt5x11extras5-dev,
                libqt5xdg-dev (>= 2.0.0),
-               libqt5xdgiconloader-dev (>= 2.0.0),
+               libqt5xdgiconloader-dev,
                libx11-dev,
                pkg-config,
                qtbase5-private-dev,
@@ -26,8 +26,9 @@ Homepage: https://github.com/lxde/lxqt-qtplugin
 
 Package: lxqt-qtplugin
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends},
-         ${shlibs:Depends},
+         ${shlibs:Depends}
 Description: LXQt system integration plugin for Qt
  With this plugin, all Qt-based programs can adopt settings of
  LXQt, such as the icon theme.
