@@ -44,7 +44,7 @@
 #include <QFileInfo>
 #include <QFileSystemWatcher>
 #include <QStyle>
-#include "qiconloader_p.h"
+#include <private/xdgiconloader/xdgiconloader_p.h>
 
 LXQtPlatformTheme::LXQtPlatformTheme():
     settingsWatcher_(NULL)
@@ -162,7 +162,7 @@ void LXQtPlatformTheme::onSettingsChanged() {
     }
 
     if(iconTheme_ != oldIconTheme) { // the icon theme is changed
-        QIconLoader::instance()->updateSystemTheme(); // this is a private internal API of Qt5.
+        XdgIconLoader::instance()->updateSystemTheme(); // this is a private internal API of Qt5.
     }
 
     // if font is changed
@@ -294,22 +294,40 @@ QVariant LXQtPlatformTheme::themeHint(ThemeHint hint) const {
     return QPlatformTheme::themeHint(hint);
 }
 
+QIconEngine *LXQtPlatformTheme::createIconEngine(const QString &iconName) const
+{
+    return new XdgIconLoaderEngine(iconName);
+}
+ 
 // Helper to return the icon theme paths from XDG.
 QStringList LXQtPlatformTheme::xdgIconThemePaths() const
 {
     QStringList paths;
+    QStringList xdgDirs;
+
     // Add home directory first in search path
     const QFileInfo homeIconDir(QDir::homePath() + QStringLiteral("/.icons"));
     if (homeIconDir.isDir())
         paths.prepend(homeIconDir.absoluteFilePath());
 
-    QString xdgDirString = QFile::decodeName(qgetenv("XDG_DATA_DIRS"));
-    if (xdgDirString.isEmpty())
-        xdgDirString = QLatin1String("/usr/local/share/:/usr/share/");
-    foreach (const QString &xdgDir, xdgDirString.split(QLatin1Char(':'))) {
-        const QFileInfo xdgIconsDir(xdgDir + QStringLiteral("/icons"));
-        if (xdgIconsDir.isDir())
-            paths.append(xdgIconsDir.absoluteFilePath());
+    QString xdgDataHome = QFile::decodeName(qgetenv("XDG_DATA_HOME"));
+    if (xdgDataHome.isEmpty())
+        xdgDataHome = QDir::homePath() + QLatin1String("/.local/share");
+    xdgDirs.append(xdgDataHome);
+
+    QString xdgDataDirs = QFile::decodeName(qgetenv("XDG_DATA_DIRS"));
+    if (xdgDataDirs.isEmpty())
+        xdgDataDirs = QLatin1String("/usr/local/share/:/usr/share/");
+    xdgDirs.append(xdgDataDirs);
+
+    foreach (const QString &s, xdgDirs) {
+        const QStringList r = s.split(QLatin1Char(':'), QString::SkipEmptyParts);
+        foreach (const QString &xdgDir, r) {
+            const QFileInfo xdgIconsDir(xdgDir + QStringLiteral("/icons"));
+            if (xdgIconsDir.isDir())
+                paths.append(xdgIconsDir.absoluteFilePath());
+        }
     }
+    paths.removeDuplicates();
     return paths;
 }

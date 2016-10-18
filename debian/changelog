@@ -1,3 +1,30 @@
+lxqt-qtplugin (0.11.0-3) unstable; urgency=medium
+
+  * Cherry-picking upstream release 0.11.0.
+  * Synced debian foo with experimental
+  * Added Multi-Arch: same, following the Multiarch hinter
+  * Bumped compat to 10
+  * Removed --parallel from rules, standard in compat 10
+  * Bumped Standards to 3.9.8, no changes needed
+  * Bumped minimum version debhelper (>= 10)
+  * Bumped minimum version liblxqt-dev (>= 0.11.0)
+  * Bumped minimum version libqtxdg-dev (>= 2.0.0)
+  * Added build dependency libqt5svg5-dev
+  * Added build dependency libqt5xdgiconloader-dev
+  * Fixed VCS fields, using https and plain /git/ 
+  * Removed README.debian, no longer needed
+  * Fixed copyrights Format field to https
+  * Bumped years in copyrights
+  * Fixed copyrights Source field
+  * Removed outdated file and license from copyrights
+  * Added hardening options
+  * Added translation control to rules
+  * Set CMAKE_BUILD_TYPE=RelWithDebInfo
+  * Exported LC_ALL=C.UTF-8, make builds reproducible
+  * Added a basic gbp.conf
+ 
+ -- Alf Gaida <agaida@siduction.org>  Tue, 18 Oct 2016 17:44:28 +0200
+
 lxqt-qtplugin (0.10.0-3) unstable; urgency=medium
 
   * Remove dbg package in favor of dbgsym. 
