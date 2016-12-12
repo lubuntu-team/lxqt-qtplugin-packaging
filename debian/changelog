@@ -1,3 +1,18 @@
+lxqt-qtplugin (0.11.1-1) unstable; urgency=medium
+
+  * Cherry-picking upstream release 0.11.1.
+  * Removed some build dependencies
+    - cmake
+    - liblxqt0-dev
+    - libqt5xdg-dev
+    - libqt5xdgiconloader-dev
+    - pkg-config
+    - qttools5-dev
+    - qttools5-dev-tools
+  * Added build dependency lxqt-build-tools (>= 0.3.0)
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 12 Dec 2016 01:38:34 +0100
+
 lxqt-qtplugin (0.11.0-3) unstable; urgency=medium
 
   * Cherry-picking upstream release 0.11.0.

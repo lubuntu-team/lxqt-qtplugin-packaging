@@ -6,19 +6,13 @@ Uploaders: Alf Gaida <agaida@siduction.org>,
 Section: x11
 Priority: optional
 Build-Depends: debhelper (>= 10),
-               cmake (>= 3.0.2),
                libdbusmenu-qt5-dev,
                libkf5windowsystem-dev,
-               liblxqt0-dev (>= 0.11.0),
                libqt5svg5-dev,
                libqt5x11extras5-dev,
-               libqt5xdg-dev (>= 2.0.0),
-               libqt5xdgiconloader-dev,
                libx11-dev,
-               pkg-config,
+               lxqt-build-tools (>= 0.3.0),
                qtbase5-private-dev,
-               qttools5-dev,
-               qttools5-dev-tools
 Standards-Version: 3.9.8
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-lxqt/lxqt-qtplugin.git/?h=debian/sid
 Vcs-Git: https://anonscm.debian.org/git/pkg-lxqt/lxqt-qtplugin.git -b debian/sid
