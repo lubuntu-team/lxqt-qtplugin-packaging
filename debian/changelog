@@ -1,3 +1,14 @@
+lxqt-qtplugin (0.11.1-2) unstable; urgency=medium
+
+  * Bump Standards to 4.0.0 - no changes needed
+  * Bump year on copyright
+  * Recommends lxqt-session and lxqt-config (Closes: #866780)
+  * Suggests lxqt | lxqt-core
+  * Removed translation stuff from rules, there are no translations for
+    the plugin
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 01 Jul 2017 19:14:21 +0200
+
 lxqt-qtplugin (0.11.1-1) unstable; urgency=medium
 
   * Cherry-picking upstream release 0.11.1.
