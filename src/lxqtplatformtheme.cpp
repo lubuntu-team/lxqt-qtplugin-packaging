@@ -46,8 +46,11 @@
 #include <QStyle>
 #include <private/xdgiconloader/xdgiconloader_p.h>
 
+#include "lxqtfiledialoghelper.h"
+
 LXQtPlatformTheme::LXQtPlatformTheme():
-    settingsWatcher_(NULL)
+    iconFollowColorScheme_(true)
+    , settingsWatcher_(NULL)
 {
     // When the plugin is loaded, it seems that the app is not yet running and
     // QThread environment is not completely set up. So creating filesystem watcher
@@ -80,6 +83,7 @@ void LXQtPlatformTheme::loadSettings() {
 
     // icon theme
     iconTheme_ = settings.value("icon_theme", "oxygen").toString();
+    iconFollowColorScheme_ = settings.value("icon_follow_color_scheme", iconFollowColorScheme_).toBool();
 
     // read other widget related settings form LxQt settings.
     QByteArray tb_style = settings.value("tool_button_style").toByteArray();
@@ -164,6 +168,7 @@ void LXQtPlatformTheme::onSettingsChanged() {
     if(iconTheme_ != oldIconTheme) { // the icon theme is changed
         XdgIconLoader::instance()->updateSystemTheme(); // this is a private internal API of Qt5.
     }
+    XdgIconLoader::instance()->setFollowColorScheme(iconFollowColorScheme_);
 
     // if font is changed
     if(oldFont != fontStr_ || oldFixedFont != fixedFontStr_){
@@ -184,6 +189,8 @@ void LXQtPlatformTheme::onSettingsChanged() {
             QApplication::setFont(font_);
     }
 
+    QApplication::setWheelScrollLines(wheelScrollLines_.toInt());
+
     // emit a ThemeChange event to all widgets
     Q_FOREACH(QWidget* widget, QApplication::allWidgets()) {
         // Qt5 added a QEvent::ThemeChange event.
@@ -193,21 +200,26 @@ void LXQtPlatformTheme::onSettingsChanged() {
 }
 
 bool LXQtPlatformTheme::usePlatformNativeDialog(DialogType type) const {
+    if(type == FileDialog
+       && qobject_cast<QApplication *>(QCoreApplication::instance())) { // QML may not have qApp
+        // use our own file dialog
+        return true;
+    }
     return false;
 }
 
-#if 0
+
 QPlatformDialogHelper *LXQtPlatformTheme::createPlatformDialogHelper(DialogType type) const {
-    return 0;
+    if(type == FileDialog
+       && qobject_cast<QApplication *>(QCoreApplication::instance())) { // QML may not have qApp
+        // use our own file dialog
+        return new LXQtFileDialogHelper();
+    }
+    return nullptr;
 }
-#endif
 
 const QPalette *LXQtPlatformTheme::palette(Palette type) const {
-
-    if (type == QPlatformTheme::SystemPalette)
-        // the default constructor uses the default palette
-        return new QPalette;
-    return QPlatformTheme::palette(type);
+    return nullptr;
 }
 
 const QFont *LXQtPlatformTheme::font(Font type) const {
@@ -288,6 +300,9 @@ QVariant LXQtPlatformTheme::themeHint(ThemeHint hint) const {
         break;
     case MouseDoubleClickDistance:
         break;
+    case WheelScrollLines:
+        return wheelScrollLines_;
+        break;
     default:
         break;
     }
@@ -320,9 +335,9 @@ QStringList LXQtPlatformTheme::xdgIconThemePaths() const
         xdgDataDirs = QLatin1String("/usr/local/share/:/usr/share/");
     xdgDirs.append(xdgDataDirs);
 
-    foreach (const QString &s, xdgDirs) {
+    for (const auto &s: xdgDirs) {
         const QStringList r = s.split(QLatin1Char(':'), QString::SkipEmptyParts);
-        foreach (const QString &xdgDir, r) {
+        for (const auto& xdgDir: r) {
             const QFileInfo xdgIconsDir(xdgDir + QStringLiteral("/icons"));
             if (xdgIconsDir.isDir())
                 paths.append(xdgIconsDir.absoluteFilePath());
