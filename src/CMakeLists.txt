@@ -6,6 +6,7 @@ include_directories(
 set(qtlxqt_HDRS
     lxqtplatformtheme.h
     lxqtsystemtrayicon.h
+    lxqtfiledialoghelper.h
     statusnotifieritem/statusnotifieritem.h
     statusnotifieritem/dbustypes.h
 )
@@ -14,6 +15,7 @@ set(qtlxqt_SRCS
     main.cpp
     lxqtplatformtheme.cpp
     lxqtsystemtrayicon.cpp
+    lxqtfiledialoghelper.cpp
     statusnotifieritem/statusnotifieritem.cpp
     statusnotifieritem/dbustypes.cpp
 )
@@ -24,14 +26,16 @@ qt5_add_dbus_adaptor(qtlxqt_SRCS
     StatusNotifierItem
 )
 
-add_library(qtlxqt SHARED ${qtlxqt_HDRS} ${qtlxqt_SRCS})
+add_library(qtlxqt MODULE ${qtlxqt_HDRS} ${qtlxqt_SRCS})
 
 target_link_libraries(qtlxqt
     Qt5::Widgets
     Qt5::DBus
     dbusmenu-qt5
     Qt5XdgIconLoader
+    fm-qt
 )
+
 
 # there is no standard way to get the plugin dir of Qt5 with cmake
 # The best way is get_target_property(QT_PLUGINS_DIR Qt5::QGtk2ThemePlugin LOCATION).

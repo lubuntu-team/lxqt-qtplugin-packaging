@@ -1,3 +1,15 @@
+lxqt-qtplugin (0.12.0-1) experimental; urgency=medium
+
+  * Cherry-picking upstream release 0.12.0.
+  * Switched to experimental
+  * Bumped Standards to 4.1.1 - no changes needed
+  * Bumped tools dependency to >= 0.4.0
+  * Fixed year in copyrights
+  * Added build dependency libfm-qt-dev (>= 0.12.0),
+  * Bumped lxqt-build-tools to >= 0.4.0
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 24 Oct 2017 19:41:49 +0200
+
 lxqt-qtplugin (0.11.1-2) unstable; urgency=medium
 
   * Bump Standards to 4.0.0 - no changes needed
