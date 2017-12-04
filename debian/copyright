@@ -3,7 +3,7 @@ Upstream-Name: lxqt-qtplugin
 Source: https://github.com/lxde/lxqt-qtplugin
 
 Files: *
-Copyright: 2013-2016 LXQt team
+Copyright: 2013-2017 LXQt team
            2010-2012 Razor team
 License: LGPL-2.1+
 
