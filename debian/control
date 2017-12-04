@@ -15,8 +15,8 @@ Build-Depends: debhelper (>= 10),
                lxqt-build-tools (>= 0.4.0),
                qtbase5-private-dev,
 Standards-Version: 4.1.1
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-lxqt/lxqt-qtplugin.git/?h=debian/experimental
-Vcs-Git: https://anonscm.debian.org/git/pkg-lxqt/lxqt-qtplugin.git -b debian/experimental
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-lxqt/lxqt-qtplugin.git/?h=debian/sid
+Vcs-Git: https://anonscm.debian.org/git/pkg-lxqt/lxqt-qtplugin.git -b debian/sid
 Homepage: https://github.com/lxde/lxqt-qtplugin
 
 Package: lxqt-qtplugin
