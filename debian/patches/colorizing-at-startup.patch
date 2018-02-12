@@ -1,0 +1,20 @@
+commit 2283f5ee3c344fc62a74e41a127e3eee53fb2c37
+Author: Tsu Jan <tsujan2000@gmail.com>
+Date:   Mon Feb 12 13:10:02 2018 +0330
+
+    Fix icon colorizing at startup
+    
+    Fixes https://github.com/lxde/lxqt/issues/1445.
+
+diff --git a/src/lxqtplatformtheme.cpp b/src/lxqtplatformtheme.cpp
+index 83786f0..8291eab 100644
+--- a/src/lxqtplatformtheme.cpp
++++ b/src/lxqtplatformtheme.cpp
+@@ -315,6 +315,7 @@ QVariant LXQtPlatformTheme::themeHint(ThemeHint hint) const {
+ 
+ QIconEngine *LXQtPlatformTheme::createIconEngine(const QString &iconName) const
+ {
++    XdgIconLoader::instance()->setFollowColorScheme(iconFollowColorScheme_);
+     return new XdgIconLoaderEngine(iconName);
+ }
+  
