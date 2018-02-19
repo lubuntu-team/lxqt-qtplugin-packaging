@@ -3,12 +3,12 @@ Upstream-Name: lxqt-qtplugin
 Source: https://github.com/lxde/lxqt-qtplugin
 
 Files: *
-Copyright: 2013-2017 LXQt team
+Copyright: 2013-2018 LXQt team
            2010-2012 Razor team
 License: LGPL-2.1+
 
 Files: debian/*
-Copyright: 2014-2017 Alf Gaida <agaida@siduction.org>
+Copyright: 2014-2018 Alf Gaida <agaida@siduction.org>
            2015      ChangZhuo Chen (陳昌倬) <czchen@debian.org>
            2015      Yukiharu YABUKI <yyabuki@debian.org>
 License: LGPL-2.1+
