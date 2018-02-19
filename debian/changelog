@@ -1,3 +1,14 @@
+lxqt-qtplugin (0.12.0-6ubuntu1) bionic; urgency=medium
+
+  * Merge from Debian Sid. Remaining changes:
+    - Cherry-pick an upstream commit because the upstream release cycle is too
+      slow:
+      + Remember the view mode.
+        * remember-view-mode.patch
+        * Upstream commit dfa18ac.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sun, 18 Feb 2018 22:48:24 -0600
+
 lxqt-qtplugin (0.12.0-6) unstable; urgency=medium
 
   * Backported lxqtplatformtheme-follow-color-scheme.patch
