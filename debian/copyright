@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: lxqt-qtplugin
-Source: https://github.com/lxde/lxqt-qtplugin
+Source: https://github.com/lxqt/lxqt-qtplugin
 
 Files: *
 Copyright: 2013-2018 LXQt team
