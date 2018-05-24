@@ -1,11 +1,11 @@
-lxqt-qtplugin (0.13.0-0ubuntu1) UNRELEASED; urgency=medium
+lxqt-qtplugin (0.13.0-0ubuntu1) cosmic; urgency=medium
 
   * New upstream release.
   * Update build dependencies.
   * Bump Standards-version to 4.1.4, no changes needed.
   * Remove patches applied upstream.
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 23 May 2018 22:35:05 -0500
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 23 May 2018 22:40:20 -0500
 
 lxqt-qtplugin (0.12.0-6ubuntu1) bionic; urgency=medium
 
