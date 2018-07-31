@@ -1,10 +1,10 @@
-lxqt-qtplugin (0.13.0-0ubuntu4) UNRELEASED; urgency=medium
+lxqt-qtplugin (0.13.0-0ubuntu4) cosmic; urgency=medium
 
   * Bump Standards-version to 4.1.5, no changes needed.
   * Lubuntuify the package.
   * Dynamically load libfm-qt on runtime instead of on build time.
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 30 Jul 2018 19:16:20 -0500
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 30 Jul 2018 19:34:33 -0500
 
 lxqt-qtplugin (0.13.0-0ubuntu3) cosmic; urgency=medium
 
