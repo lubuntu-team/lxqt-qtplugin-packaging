@@ -24,7 +24,7 @@ Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends}
-Recommends: libfm-qt5 (>= 0.13.1-5ubuntu4),
+Recommends: libfm-qt6 (>= 0.14.0),
             lxqt-session,
             lxqt-config
 Suggests: lxqt | lxqt-core
