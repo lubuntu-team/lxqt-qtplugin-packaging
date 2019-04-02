@@ -1,3 +1,10 @@
+lxqt-qtplugin (0.14.0-0ubuntu3) disco; urgency=medium
+
+  * Rebuild against qtbase-abi-5-12-2.
+  * Explicity build depend on libqt5xdg-dev.
+
+ -- Rik Mills <rikmills@kubuntu.org>  Sun, 31 Mar 2019 10:34:46 +0100
+
 lxqt-qtplugin (0.14.0-0ubuntu2) disco; urgency=medium
 
   * Recommend libfm-qt6 instead.
