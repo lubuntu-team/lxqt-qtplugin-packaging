@@ -4,12 +4,13 @@ XSBC-Original-Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debia
 Uploaders: Simon Quigley <tsimonq2@ubuntu.com>
 Section: x11
 Priority: optional
-Build-Depends: debhelper (>= 12),
+Build-Depends: debhelper-compat (= 12),
                libdbusmenu-qt5-dev,
                libkf5windowsystem-dev,
                libqt5svg5-dev,
                libqt5xdg-dev,
                libqt5x11extras5-dev,
+               libqt5xdgiconloader-dev (>= 3.3.1),
                libx11-dev,
                lxqt-build-tools (>= 0.6.0),
                qtbase5-private-dev

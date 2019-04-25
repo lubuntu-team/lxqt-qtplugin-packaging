@@ -1,0 +1,20 @@
+Description: Load the versioned library
+ Loading libfm-qt.so would not be wise, it would introduce a dependency
+ to libfm-qt-dev. So hard patching to libfm-qt.so.6 will be fine for 
+ Buster - we will find a better solution upstream for the next release.
+Author: Alf Gaida <agaida@siduction.org>
+
+---
+Bug-Debian: https://bugs.debian.org/927905
+
+--- lxqt-qtplugin-0.14.0.orig/src/lxqtplatformtheme.cpp
++++ lxqt-qtplugin-0.14.0/src/lxqtplatformtheme.cpp
+@@ -239,7 +239,7 @@ QPlatformDialogHelper *LXQtPlatformTheme
+         // The createFileDialogHelper() method is dynamically loaded from libfm-qt on demand
+         if(createFileDialogHelper == nullptr) {
+             // try to dynamically load libfm-qt.so
+-            QLibrary libfmQtLibrary{QLatin1String("libfm-qt")};
++            QLibrary libfmQtLibrary{QLatin1String("libfm-qt.so.6")};
+             libfmQtLibrary.load();
+             if(!libfmQtLibrary.isLoaded()) {
+                 return nullptr;
