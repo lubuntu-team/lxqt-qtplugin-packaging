@@ -1,11 +1,11 @@
-lxqt-qtplugin (0.14.0-3ubuntu1) UNRELEASED; urgency=medium
+lxqt-qtplugin (0.14.0-3ubuntu1) eoan; urgency=medium
 
   * Merge from Debian Sid. Remaining changes:
     - Explicitly depend on libqt5xdg-dev.
     - Bump the ABI package to libfm-qt6.
     - Remove unneeded ~s from versions.
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Thu, 25 Apr 2019 16:07:02 -0500
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Fri, 03 May 2019 08:45:05 -0500
 
 lxqt-qtplugin (0.14.0-3) unstable; urgency=medium
 
