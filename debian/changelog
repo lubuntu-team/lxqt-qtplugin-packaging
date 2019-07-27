@@ -1,3 +1,9 @@
+lxqt-qtplugin (0.14.0-3ubuntu2) eoan; urgency=medium
+
+  * No-change rebuild against qtbase-abi-5-12-4.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Sat, 13 Jul 2019 17:11:05 +0300
+
 lxqt-qtplugin (0.14.0-3ubuntu1) eoan; urgency=medium
 
   * Merge from Debian Sid. Remaining changes:
