@@ -1,3 +1,9 @@
+lxqt-qtplugin (0.14.0-3ubuntu3) focal; urgency=medium
+
+  * No-change rebuild against qtbase-abi-5-12-5.
+
+ -- Rik Mills <rikmills@kde.org>  Sun, 27 Oct 2019 06:30:03 +0000
+
 lxqt-qtplugin (0.14.0-3ubuntu2) eoan; urgency=medium
 
   * No-change rebuild against qtbase-abi-5-12-4.
