@@ -1,10 +1,22 @@
-lxqt-qtplugin (0.14.0-3ubuntu2) UNRELEASED; urgency=medium
+lxqt-qtplugin (0.14.0-3ubuntu4) UNRELEASED; urgency=medium
 
   * Removed load-versioned-libfm-qt.patch
   * Added libfm-qt-dev as build dependency
   * Added libfm-qt6 as dependency
 
  -- apt-ghetto <apt-ghetto@protonmail.com>  Thu, 09 May 2019 18:27:21 +0200
+
+lxqt-qtplugin (0.14.0-3ubuntu3) focal; urgency=medium
+
+  * No-change rebuild against qtbase-abi-5-12-5.
+
+ -- Rik Mills <rikmills@kde.org>  Sun, 27 Oct 2019 06:30:03 +0000
+
+lxqt-qtplugin (0.14.0-3ubuntu2) eoan; urgency=medium
+
+  * No-change rebuild against qtbase-abi-5-12-4.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Sat, 13 Jul 2019 17:11:05 +0300
 
 lxqt-qtplugin (0.14.0-3ubuntu1) eoan; urgency=medium
 
