@@ -9,8 +9,8 @@ Build-Depends: debhelper-compat (= 12),
                libfm-qt-dev (>= 0.15.0),
                libkf5windowsystem-dev,
                libqt5svg5-dev,
-               libqt5xdg-dev,
                libqt5x11extras5-dev,
+               libqt5xdg-dev,
                libqt5xdgiconloader-dev (>= 3.5.0),
                libx11-dev,
                lxqt-build-tools (>= 0.7.0),
@@ -25,11 +25,8 @@ Homepage: https://github.com/lxde/lxqt-qtplugin
 Package: lxqt-qtplugin
 Architecture: any
 Multi-Arch: same
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
-         libfm-qt6
-Recommends: lxqt-session,
-            lxqt-config
+Depends: libfm-qt6, ${misc:Depends}, ${shlibs:Depends}
+Recommends: lxqt-config, lxqt-session
 Suggests: lxqt | lxqt-core
 Description: LXQt system integration plugin for Qt
  With this plugin, all Qt-based programs can adopt settings of

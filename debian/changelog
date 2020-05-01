@@ -10,6 +10,7 @@ lxqt-qtplugin (0.15.0-0ubuntu1) UNRELEASED; urgency=medium
     - Update upstream signing key.
     - Update LXQt build dependencies.
   * Bump Standards-version to 4.5.0, no changes needed.
+  * Run wrap-and-sort.
 
  -- apt-ghetto <apt-ghetto@protonmail.com>  Thu, 09 May 2019 18:27:21 +0200
 
