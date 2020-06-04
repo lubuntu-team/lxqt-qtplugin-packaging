@@ -1,4 +1,4 @@
-lxqt-qtplugin (0.15.0-0ubuntu1) UNRELEASED; urgency=medium
+lxqt-qtplugin (0.15.0-0ubuntu1) groovy; urgency=medium
 
   [ apt-ghetto ]
   * Removed load-versioned-libfm-qt.patch
@@ -13,7 +13,7 @@ lxqt-qtplugin (0.15.0-0ubuntu1) UNRELEASED; urgency=medium
   * Run wrap-and-sort.
   * Bump libfm-qt{6,7}.
 
- -- apt-ghetto <apt-ghetto@protonmail.com>  Thu, 09 May 2019 18:27:21 +0200
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 03 Jun 2020 23:37:36 -0500
 
 lxqt-qtplugin (0.14.0-3ubuntu3) focal; urgency=medium
 
