@@ -4,16 +4,16 @@ XSBC-Original-Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debia
 Uploaders: Simon Quigley <tsimonq2@ubuntu.com>
 Section: x11
 Priority: optional
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: debhelper-compat (= 13),
                libdbusmenu-qt5-dev,
-               libfm-qt-dev (>= 0.15.0),
+               libfm-qt-dev (>= 0.16.0~),
                libkf5windowsystem-dev,
                libqt5svg5-dev,
                libqt5x11extras5-dev,
                libqt5xdg-dev,
                libqt5xdgiconloader-dev (>= 3.5.0),
                libx11-dev,
-               lxqt-build-tools (>= 0.7.0),
+               lxqt-build-tools (>= 0.8.0~),
                qtbase5-private-dev
 Standards-Version: 4.5.0
 Vcs-Browser: https://phab.lubuntu.me/source/lxqt-qtplugin/
@@ -25,7 +25,7 @@ Homepage: https://github.com/lxde/lxqt-qtplugin
 Package: lxqt-qtplugin
 Architecture: any
 Multi-Arch: same
-Depends: libfm-qt7, ${misc:Depends}, ${shlibs:Depends}
+Depends: libfm-qt8, ${misc:Depends}, ${shlibs:Depends}
 Recommends: lxqt-config, lxqt-session
 Suggests: lxqt | lxqt-core
 Description: LXQt system integration plugin for Qt

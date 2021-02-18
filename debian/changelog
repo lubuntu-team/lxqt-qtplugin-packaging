@@ -1,3 +1,34 @@
+lxqt-qtplugin (0.16.0-1ubuntu2) hirsute; urgency=medium
+
+  * New upstream version.
+  * Bumped debhelper-compat to 13.
+
+ -- Raman Sarda <theloudspeaker@lubuntu.me>  Thu, 18 Feb 2021 23:55:14 +0530
+
+lxqt-qtplugin (0.16.0-1) unstable; urgency=medium
+
+  [ Alf Gaida ]
+  * Switched to gbp
+  * Bumped Standards-Version to 4.4.0, no changes needed
+  * Removed no longer needed patches, applied upstream
+
+  [ Andrew Lee (李健秋) ]
+  * New upstream release. (Closes: #977329)
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Thu, 07 Jan 2021 17:53:47 +0800
+
+lxqt-qtplugin (0.15.0-0ubuntu3) hirsute; urgency=medium
+
+  * No-change rebuild against qtbase-abi-5-15-2.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Fri, 27 Nov 2020 22:54:27 +0300
+
+lxqt-qtplugin (0.15.0-0ubuntu2) hirsute; urgency=medium
+
+  * No-change rebuild against qtbase-abi-5-15-1.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Fri, 30 Oct 2020 20:11:14 +0300
+
 lxqt-qtplugin (0.15.0-0ubuntu1) groovy; urgency=medium
 
   [ apt-ghetto ]
@@ -39,9 +70,30 @@ lxqt-qtplugin (0.14.0-3ubuntu1) eoan; urgency=medium
 lxqt-qtplugin (0.14.0-3) unstable; urgency=medium
 
   * Try to load the versioned libfm-qt.so.6 instead of libfm-qt.so
-    (Closes: #927905)
+    (Closes: #927905) 
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 24 Apr 2019 23:05:04 +0200
+
+lxqt-qtplugin (0.14.0-2) unstable; urgency=medium
+
+  * Added missed direct dependency libqt5xdgiconloader-dev, the new
+    build-tools don't depend on it any longer to prevent circular
+    dependencies with libqtxdg (Closes: #924474).
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 13 Mar 2019 17:59:00 +0100
+
+lxqt-qtplugin (0.14.0-1) unstable; urgency=medium
+
+  * Cherry-picking upstream release 0.14.0.
+  * Bumped Standards to 4.3.0, no changes needed
+  * Dropped d/compat, use debhelper-compat = 12, no changes needed
+  * Fixed years in d/copyright
+  * Bumped minimum version liblxqt0-dev (>= 0.14.0~)
+  * Removed build dependency libfm-qt-dev
+  * Recommend libfm-qt6
+  * Added d/upstream/metadata
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 27 Jan 2019 18:08:59 +0100
 
 lxqt-qtplugin (0.14.0-0ubuntu3) disco; urgency=medium
 
@@ -86,6 +138,24 @@ lxqt-qtplugin (0.14.0-0ubuntu1) disco; urgency=medium
   * Bump debhelper compat to 12, no changes needed.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 26 Jan 2019 00:44:38 -0600
+
+lxqt-qtplugin (0.13.0-2) unstable; urgency=medium
+
+  * Switched to unstable
+  * Bumped build dependency libfm-qt-dev to >= 0.13.1~
+  * Bumped Standards to 4.1.5, no changes needed
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 07 Jul 2018 14:13:08 +0200
+
+lxqt-qtplugin (0.13.0-1) experimental; urgency=medium
+
+  * Cherry-picking upstream release 0.13.0.
+  * Switched to experimental
+  * Bumped build dependency libfm-qt-dev to >= 0.13.0~
+  * Bumped build dependency lxqt-build-tools to >= 0.5.0~
+  * Removed the ported back upstream patches
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 26 May 2018 01:13:13 +0200
 
 lxqt-qtplugin (0.13.0-0ubuntu4) cosmic; urgency=medium
 
@@ -311,3 +381,4 @@ lxqt-qtplugin (0.9.0+20150819-1) unstable; urgency=medium
   * Added README.Debian.
 
  -- Yukiharu YABUKI <yyabuki@debian.org>  Thu, 20 Aug 2015 05:49:28 +0900
+
