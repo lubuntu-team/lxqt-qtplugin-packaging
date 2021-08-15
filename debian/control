@@ -25,7 +25,7 @@ Homepage: https://github.com/lxde/lxqt-qtplugin
 Package: lxqt-qtplugin
 Architecture: any
 Multi-Arch: same
-Depends: libfm-qt8, ${misc:Depends}, ${shlibs:Depends}
+Depends: libfm-qt9, ${misc:Depends}, ${shlibs:Depends}
 Recommends: lxqt-config, lxqt-session
 Suggests: lxqt | lxqt-core
 Description: LXQt system integration plugin for Qt

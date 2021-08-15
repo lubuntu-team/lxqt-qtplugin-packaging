@@ -1,3 +1,9 @@
+lxqt-qtplugin (0.17.0-0ubuntu2) impish; urgency=medium
+
+  * Add libfm-qt9 dependency.
+
+ -- Dan Simmons <kc2bez@lubuntu.me>  Sun, 15 Aug 2021 11:33:09 -0400
+
 lxqt-qtplugin (0.17.0-0ubuntu1) impish; urgency=medium
 
   * New upstream release 0.17.0
