@@ -6,14 +6,14 @@ Section: x11
 Priority: optional
 Build-Depends: debhelper-compat (= 13),
                libdbusmenu-qt5-dev,
-               libfm-qt-dev (>= 0.17.1),
+               libfm-qt-dev (>= 1.1.0),
                libkf5windowsystem-dev,
                libqt5svg5-dev,
                libqt5x11extras5-dev,
                libqt5xdg-dev,
-               libqt5xdgiconloader-dev (>= 3.7.1),
+               libqt5xdgiconloader-dev (>= 3.9.1),
                libx11-dev,
-               lxqt-build-tools (>= 0.9.0),
+               lxqt-build-tools (>= 0.11.0),
                qtbase5-private-dev
 Standards-Version: 4.5.1
 Vcs-Browser: https://phab.lubuntu.me/source/lxqt-qtplugin/
