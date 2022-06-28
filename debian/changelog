@@ -118,7 +118,7 @@ lxqt-qtplugin (0.14.0-3ubuntu1) eoan; urgency=medium
 lxqt-qtplugin (0.14.0-3) unstable; urgency=medium
 
   * Try to load the versioned libfm-qt.so.6 instead of libfm-qt.so
-    (Closes: #927905) 
+    (Closes: #927905)
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 24 Apr 2019 23:05:04 +0200
 
@@ -429,4 +429,3 @@ lxqt-qtplugin (0.9.0+20150819-1) unstable; urgency=medium
   * Added README.Debian.
 
  -- Yukiharu YABUKI <yyabuki@debian.org>  Thu, 20 Aug 2015 05:49:28 +0900
-
