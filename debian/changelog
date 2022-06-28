@@ -1,3 +1,9 @@
+lxqt-qtplugin (1.1.0-0ubuntu1~ppa1) jammy; urgency=medium
+
+  * Backport to Jammy.
+
+ -- Aaron Rainbolt <arraybolt3@gmail.com>  Mon, 27 Jun 2022 19:17:00 -0500
+
 lxqt-qtplugin (1.1.0-0ubuntu1) kinetic; urgency=medium
 
   * New upstream release.
