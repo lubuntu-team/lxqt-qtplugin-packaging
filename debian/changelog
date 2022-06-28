@@ -2,6 +2,7 @@ lxqt-qtplugin (1.1.0-0ubuntu1~ppa1) jammy; urgency=medium
 
   * Backport to Jammy.
   * Updated Lubuntu Developers copyright to 2021-2022.
+  * Removed reduntant Repository-Browser field from d/upstream/metadata.
 
  -- Aaron Rainbolt <arraybolt3@gmail.com>  Mon, 27 Jun 2022 19:17:00 -0500
 
