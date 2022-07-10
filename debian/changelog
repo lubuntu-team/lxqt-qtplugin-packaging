@@ -1,4 +1,4 @@
-lxqt-qtplugin (1.1.0-0ubuntu1~ppa1) jammy; urgency=medium
+lxqt-qtplugin (1.1.0-0ubuntu1~ppa2) jammy; urgency=medium
 
   * Backport to Jammy.
   * Updated copyright file.
