@@ -3,7 +3,7 @@ Upstream-Name: lxqt-qtplugin
 Source: https://github.com/lxqt/lxqt-qtplugin
 
 Files: *
-Copyright: 2014-2015 LXQt team
+Copyright: 2014-2022 LXQt team
 License: LGPL-2.1+
 
 Files: debian/*

@@ -1,7 +1,7 @@
 lxqt-qtplugin (1.1.0-0ubuntu1~ppa1) jammy; urgency=medium
 
   * Backport to Jammy.
-  * Updated Lubuntu Developers copyright to 2021-2022.
+  * Updated copyright file.
   * Removed redundant Repository-Browser field from d/upstream/metadata.
   * Removed obsolete "-Wl,--as-needed" linker flag.
   * Bumped Standards-Version to 4.6.1, no changes necessary.
