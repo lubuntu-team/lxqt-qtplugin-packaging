@@ -1,48 +1,19 @@
-lxqt-qtplugin (1.1.0-0ubuntu1) kinetic; urgency=medium
+lxqt-qtplugin (1.1.0-1) experimental; urgency=medium
 
-  * New upstream release.
-  * Bumped build dependencies.
-  * Drop old Breaks/Replaces since we're past the LTS. Update the
-    runtime dependencies too.
+  [ Aaron Rainbolt ]
+  * New upstream release 1.1.0.
+  * Removed obsolete debian/compat file.
+  * Switched to GBP.
+  * Upstreamed non-Ubuntu-specific packaging changes from Ubuntu, modifying
+    the following files:
+    - control
+    - copyright
+    - upstream/*
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Thu, 02 Jun 2022 12:43:40 -0500
+  [ Simon Quigley ]
+  * Re-add the existing uploaders to debian/control.
 
-lxqt-qtplugin (0.17.0-0ubuntu4) kinetic; urgency=medium
-
-  * No-change rebuild against Qt 5.15.4.
-
- -- Dmitry Shachnev <mitya57@ubuntu.com>  Wed, 18 May 2022 00:22:00 +0300
-
-lxqt-qtplugin (0.17.0-0ubuntu3) jammy; urgency=medium
-
-  * No-change rebuild against Qt 5.15.3.
-
- -- Dmitry Shachnev <mitya57@ubuntu.com>  Sat, 19 Mar 2022 17:58:10 +0300
-
-lxqt-qtplugin (0.17.0-0ubuntu2) impish; urgency=medium
-
-  * Add libfm-qt9 dependency.
-
- -- Dan Simmons <kc2bez@lubuntu.me>  Sun, 15 Aug 2021 11:33:09 -0400
-
-lxqt-qtplugin (0.17.0-0ubuntu1) impish; urgency=medium
-
-  * New upstream release 0.17.0
-  * Update debian/control
-    - Bump Standards-Version to 4.5.1
-    - Use libfm-qt-dev 0.17.1
-    - Use libqt5xdgiconloader-dev 0.17.1
-    - Use lxqt-build-tools 0.9.0
-  * Fix debian/copyright
-
- -- apt-ghetto <apt-ghetto@protonmail.com>  Wed, 11 Aug 2021 10:20:29 +0200
-
-lxqt-qtplugin (0.16.0-1ubuntu2) hirsute; urgency=medium
-
-  * New upstream version.
-  * Bumped debhelper-compat to 13.
-
- -- Raman Sarda <theloudspeaker@lubuntu.me>  Thu, 18 Feb 2021 23:55:14 +0530
+ -- Aaron Rainbolt <arraybolt3@gmail.com>  Sun, 10 Jul 2022 00:29:24 -0500
 
 lxqt-qtplugin (0.16.0-1) unstable; urgency=medium
 
@@ -55,56 +26,6 @@ lxqt-qtplugin (0.16.0-1) unstable; urgency=medium
   * New upstream release. (Closes: #977329)
 
  -- Andrew Lee (李健秋) <ajqlee@debian.org>  Thu, 07 Jan 2021 17:53:47 +0800
-
-lxqt-qtplugin (0.15.0-0ubuntu3) hirsute; urgency=medium
-
-  * No-change rebuild against qtbase-abi-5-15-2.
-
- -- Dmitry Shachnev <mitya57@ubuntu.com>  Fri, 27 Nov 2020 22:54:27 +0300
-
-lxqt-qtplugin (0.15.0-0ubuntu2) hirsute; urgency=medium
-
-  * No-change rebuild against qtbase-abi-5-15-1.
-
- -- Dmitry Shachnev <mitya57@ubuntu.com>  Fri, 30 Oct 2020 20:11:14 +0300
-
-lxqt-qtplugin (0.15.0-0ubuntu1) groovy; urgency=medium
-
-  [ apt-ghetto ]
-  * Removed load-versioned-libfm-qt.patch
-  * Added libfm-qt-dev as build dependency
-  * Added libfm-qt6 as dependency
-
-  [ Simon Quigley ]
-  * New upstream version.
-    - Update upstream signing key.
-    - Update LXQt build dependencies.
-  * Bump Standards-version to 4.5.0, no changes needed.
-  * Run wrap-and-sort.
-  * Bump libfm-qt{6,7}.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 03 Jun 2020 23:37:36 -0500
-
-lxqt-qtplugin (0.14.0-3ubuntu3) focal; urgency=medium
-
-  * No-change rebuild against qtbase-abi-5-12-5.
-
- -- Rik Mills <rikmills@kde.org>  Sun, 27 Oct 2019 06:30:03 +0000
-
-lxqt-qtplugin (0.14.0-3ubuntu2) eoan; urgency=medium
-
-  * No-change rebuild against qtbase-abi-5-12-4.
-
- -- Dmitry Shachnev <mitya57@ubuntu.com>  Sat, 13 Jul 2019 17:11:05 +0300
-
-lxqt-qtplugin (0.14.0-3ubuntu1) eoan; urgency=medium
-
-  * Merge from Debian Sid. Remaining changes:
-    - Explicitly depend on libqt5xdg-dev.
-    - Bump the ABI package to libfm-qt6.
-    - Remove unneeded ~s from versions.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Fri, 03 May 2019 08:45:05 -0500
 
 lxqt-qtplugin (0.14.0-3) unstable; urgency=medium
 
@@ -134,50 +55,6 @@ lxqt-qtplugin (0.14.0-1) unstable; urgency=medium
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 27 Jan 2019 18:08:59 +0100
 
-lxqt-qtplugin (0.14.0-0ubuntu3) disco; urgency=medium
-
-  * Rebuild against qtbase-abi-5-12-2.
-  * Explicity build depend on libqt5xdg-dev.
-
- -- Rik Mills <rikmills@kubuntu.org>  Sun, 31 Mar 2019 10:34:46 +0100
-
-lxqt-qtplugin (0.14.0-2) unstable; urgency=medium
-
-  * Added missed direct dependency libqt5xdgiconloader-dev, the new
-    build-tools don't depend on it any longer to prevent circular
-    dependencies with libqtxdg (Closes: #924474).
-
- -- Alf Gaida <agaida@siduction.org>  Wed, 13 Mar 2019 17:59:00 +0100
-
-lxqt-qtplugin (0.14.0-0ubuntu2) disco; urgency=medium
-
-  * Recommend libfm-qt6 instead.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Sun, 27 Jan 2019 21:01:22 -0600
-
-lxqt-qtplugin (0.14.0-1) unstable; urgency=medium
-
-  * Cherry-picking upstream release 0.14.0.
-  * Bumped Standards to 4.3.0, no changes needed
-  * Dropped d/compat, use debhelper-compat = 12, no changes needed
-  * Fixed years in d/copyright
-  * Bumped minimum version liblxqt0-dev (>= 0.14.0~)
-  * Removed build dependency libfm-qt-dev
-  * Recommend libfm-qt6
-  * Added d/upstream/metadata
-
- -- Alf Gaida <agaida@siduction.org>  Sun, 27 Jan 2019 18:08:59 +0100
-
-lxqt-qtplugin (0.14.0-0ubuntu1) disco; urgency=medium
-
-  * New upstream release.
-    - Bump build dependencies.
-    - Remove reverse-applicable patches.
-  * Bump Standards-version to 4.3.0, no changes needed.
-  * Bump debhelper compat to 12, no changes needed.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 26 Jan 2019 00:44:38 -0600
-
 lxqt-qtplugin (0.13.0-2) unstable; urgency=medium
 
   * Switched to unstable
@@ -195,53 +72,6 @@ lxqt-qtplugin (0.13.0-1) experimental; urgency=medium
   * Removed the ported back upstream patches
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 26 May 2018 01:13:13 +0200
-
-lxqt-qtplugin (0.13.0-0ubuntu4) cosmic; urgency=medium
-
-  * Bump Standards-version to 4.1.5, no changes needed.
-  * Lubuntuify the package.
-  * Dynamically load libfm-qt on runtime instead of on build time.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 30 Jul 2018 19:34:33 -0500
-
-lxqt-qtplugin (0.13.0-0ubuntu3) cosmic; urgency=medium
-
-  * No-change rebuild against qtbase-abi-5-11-0.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 18 Jul 2018 03:18:15 -0500
-
-lxqt-qtplugin (0.13.0-0ubuntu2) cosmic; urgency=medium
-
-  * No-change rebuild against libfm-qt.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 14 Jul 2018 01:34:06 -0500
-
-lxqt-qtplugin (0.13.0-2) unstable; urgency=medium
-
-  * Switched to unstable
-  * Bumped build dependency libfm-qt-dev to >= 0.13.1~
-  * Bumped Standards to 4.1.5, no changes needed
-
- -- Alf Gaida <agaida@siduction.org>  Sat, 07 Jul 2018 14:13:08 +0200
-
-lxqt-qtplugin (0.13.0-1) experimental; urgency=medium
-
-  * Cherry-picking upstream release 0.13.0.
-  * Switched to experimental
-  * Bumped build dependency libfm-qt-dev to >= 0.13.0~
-  * Bumped build dependency lxqt-build-tools to >= 0.5.0~
-  * Removed the ported back upstream patches
-
- -- Alf Gaida <agaida@siduction.org>  Sat, 26 May 2018 01:13:13 +0200
-
-lxqt-qtplugin (0.13.0-0ubuntu1) cosmic; urgency=medium
-
-  * New upstream release.
-  * Update build dependencies.
-  * Bump Standards-version to 4.1.4, no changes needed.
-  * Remove patches applied upstream.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 23 May 2018 22:40:20 -0500
 
 lxqt-qtplugin (0.12.0-7) unstable; urgency=medium
 
@@ -251,17 +81,6 @@ lxqt-qtplugin (0.12.0-7) unstable; urgency=medium
   * Changed Homepage, Source and watch for lxqt
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 28 Apr 2018 16:10:41 +0200
-
-lxqt-qtplugin (0.12.0-6ubuntu1) bionic; urgency=medium
-
-  * Merge from Debian Sid. Remaining changes:
-    - Cherry-pick an upstream commit because the upstream release cycle is too
-      slow:
-      + Remember the view mode.
-        * remember-view-mode.patch
-        * Upstream commit dfa18ac.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Sun, 18 Feb 2018 22:48:24 -0600
 
 lxqt-qtplugin (0.12.0-6) unstable; urgency=medium
 
@@ -281,16 +100,6 @@ lxqt-qtplugin (0.12.0-5) unstable; urgency=medium
   * Bumped years in copyright
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 12 Feb 2018 19:52:16 +0100
-
-lxqt-qtplugin (0.12.0-4ubuntu1) bionic; urgency=medium
-
-  * Cherry-pick an upstream commit because the upstream release cycle is too
-    slow:
-    - Remember the view mode.
-      + remember-view-mode.patch
-      + Upstream commit dfa18ac.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 05 Feb 2018 21:33:02 -0600
 
 lxqt-qtplugin (0.12.0-4) unstable; urgency=medium
 
@@ -420,4 +229,3 @@ lxqt-qtplugin (0.9.0+20150819-1) unstable; urgency=medium
   * Added README.Debian.
 
  -- Yukiharu YABUKI <yyabuki@debian.org>  Thu, 20 Aug 2015 05:49:28 +0900
-
