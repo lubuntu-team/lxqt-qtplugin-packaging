@@ -1,5 +1,6 @@
 Source: lxqt-qtplugin
-Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
+Maintainer: Lubuntu Developers <lubuntu-devel@lists.ubuntu.com>
+XSBC-Original-Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
 Uploaders: Alf Gaida <agaida@siduction.org>,
            Andrew Lee (李健秋) <ajqlee@debian.org>,
            ChangZhuo Chen (陳昌倬) <czchen@debian.org>,
@@ -20,8 +21,10 @@ Build-Depends: debhelper-compat (= 13),
                lxqt-build-tools (>= 0.11.0),
                qtbase5-private-dev
 Standards-Version: 4.6.1
-Vcs-Browser: https://salsa.debian.org/lxqt-team/lxqt-qtplugin
-Vcs-Git: https://salsa.debian.org/lxqt-team/lxqt-qtplugin.git
+Vcs-Browser: https://git.lubuntu.me/Lubuntu/lxqt-qtplugin-packaging
+Vcs-Git: https://git.lubuntu.me/Lubuntu/lxqt-qtplugin-packaging.git
+XS-Debian-Vcs-Browser: https://salsa.debian.org/lxqt-team/lxqt-qtplugin
+XS-Debian-Vcs-Git: https://salsa.debian.org/lxqt-team/lxqt-qtplugin.git
 Homepage: https://github.com/lxqt/lxqt-qtplugin
 Rules-Requires-Root: no
 
