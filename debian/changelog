@@ -2,6 +2,7 @@ lxqt-qtplugin (1.2.0-0ubuntu4) lunar; urgency=medium
 
   * Removed trailing whitespace from changelog.
   * Updated copyright file.
+  * Bumped Standards-Version to 4.6.2, no changes necessary.
 
  -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Thu, 09 Feb 2023 22:34:25 -0600
 

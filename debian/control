@@ -20,7 +20,7 @@ Build-Depends: debhelper-compat (= 13),
                libx11-dev,
                lxqt-build-tools (>= 0.12.0),
                qtbase5-private-dev
-Standards-Version: 4.6.1
+Standards-Version: 4.6.2
 Vcs-Browser: https://git.lubuntu.me/Lubuntu/lxqt-qtplugin-packaging
 Vcs-Git: https://git.lubuntu.me/Lubuntu/lxqt-qtplugin-packaging.git
 XS-Debian-Vcs-Browser: https://salsa.debian.org/lxqt-team/lxqt-qtplugin
