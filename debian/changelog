@@ -1,3 +1,9 @@
+lxqt-qtplugin (1.2.0-0ubuntu4) lunar; urgency=medium
+
+  * Removed trailing whitespace from changelog.
+
+ -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Thu, 09 Feb 2023 22:34:25 -0600
+
 lxqt-qtplugin (1.2.0-0ubuntu3) lunar; urgency=medium
 
   * No-change rebuild against Qt 5.15.8.
@@ -51,7 +57,7 @@ lxqt-qtplugin (0.16.0-1) unstable; urgency=medium
 lxqt-qtplugin (0.14.0-3) unstable; urgency=medium
 
   * Try to load the versioned libfm-qt.so.6 instead of libfm-qt.so
-    (Closes: #927905) 
+    (Closes: #927905)
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 24 Apr 2019 23:05:04 +0200
 
