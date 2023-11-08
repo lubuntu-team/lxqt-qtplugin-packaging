@@ -2,6 +2,7 @@ lxqt-qtplugin (1.4.0-0ubuntu1) noble; urgency=medium
 
   * New upstream release.
   * Fixed copyright file.
+  * Bumped and fixed build dependency versions.
 
  -- Aaron Rainbolt <arraybolt3@gmail.com>  Wed, 08 Nov 2023 16:52:40 -0600
 
