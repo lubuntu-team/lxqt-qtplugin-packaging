@@ -31,7 +31,7 @@ Rules-Requires-Root: no
 Package: lxqt-qtplugin
 Architecture: any
 Multi-Arch: same
-Depends: libfm-qt13, ${misc:Depends}, ${shlibs:Depends}
+Depends: libfm-qt14, ${misc:Depends}, ${shlibs:Depends}
 Recommends: lxqt-config, lxqt-session
 Suggests: lxqt | lxqt-core
 Description: LXQt system integration plugin for Qt
