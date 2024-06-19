@@ -1,6 +1,7 @@
 lxqt-qtplugin (2.0.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Update copyright file.
 
  -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Tue, 18 Jun 2024 22:11:31 -0500
 
