@@ -9,4 +9,5 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 override_dh_auto_configure:
 	dh_auto_configure --\
-		-DCMAKE_BUILD_TYPE=RelWithDebInfo
+		-DCMAKE_BUILD_TYPE=RelWithDebInfo \
+		-DQT_PLUGINS_DIR=/usr/lib/${DEB_HOST_MULTIARCH}/qt6/plugins
