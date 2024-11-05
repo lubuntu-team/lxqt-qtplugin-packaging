@@ -10,15 +10,15 @@ Uploaders: Alf Gaida <agaida@siduction.org>,
 Section: x11
 Priority: optional
 Build-Depends: debhelper-compat (= 13),
-               libdbusmenu-lxqt0-dev,
-               libfm-qt6-dev (>= 2.0.0),
+               libdbusmenu-lxqt0-dev (>= 0.2.0),
+               libfm-qt6-dev (>= 2.1.0),
                libkf6windowsystem-dev,
-               libqt6xdg-dev (>= 4.0.0),
-               libqt6xdgiconloader-dev (>= 4.0.0),
+               libqt6xdg-dev (>= 4.1.0),
+               libqt6xdgiconloader-dev (>= 4.1.0),
                libx11-dev,
-               lxqt-build-tools (>= 2.0.0),
-               qt6-base-private-dev,
-               qt6-svg-dev
+               lxqt-build-tools (>= 2.1.0),
+               qt6-base-private-dev (>= 6.6.0),
+               qt6-svg-dev (>= 6.6.0)
 Standards-Version: 4.7.0
 Vcs-Browser: https://git.lubuntu.me/Lubuntu/lxqt-qtplugin-packaging
 Vcs-Git: https://git.lubuntu.me/Lubuntu/lxqt-qtplugin-packaging.git
@@ -30,7 +30,7 @@ Rules-Requires-Root: no
 Package: lxqt-qtplugin
 Architecture: any
 Multi-Arch: same
-Depends: libfm-qt6-14, ${misc:Depends}, ${shlibs:Depends}
+Depends: libfm-qt6-15, ${misc:Depends}, ${shlibs:Depends}
 Recommends: lxqt-config, lxqt-session
 Suggests: lxqt | lxqt-core
 Description: LXQt system integration plugin for Qt
