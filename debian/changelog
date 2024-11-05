@@ -13,7 +13,7 @@ lxqt-qtplugin (2.0.0-0ubuntu3) plucky; urgency=medium
 
 lxqt-qtplugin (2.0.0-0ubuntu2) oracular; urgency=medium
 
-  * Temporary fix for FTBFS on arm64. 
+  * Temporary fix for FTBFS on arm64.
     - d/patches: Add set-qt-plugin-dir-via-configure.patch.
     - d/rules: Pass QT_PLUGINS_DIR to configure.
 
