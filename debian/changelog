@@ -1,3 +1,9 @@
+lxqt-qtplugin (2.1.0-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Tue, 05 Nov 2024 13:39:00 -0600
+
 lxqt-qtplugin (2.0.0-0ubuntu3) plucky; urgency=medium
 
   * No-change rebuild against Qt 6.7.2 private-abi.
