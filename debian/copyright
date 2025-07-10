@@ -3,11 +3,11 @@ Upstream-Name: lxqt-qtplugin
 Source: https://github.com/lxqt/lxqt-qtplugin
 
 Files: *
-Copyright: 2013-2024 LXQt team
+Copyright: 2013-2025 LXQt team
 License: LGPL-2.1+
 
 Files: debian/*
-Copyright: 2021-2024 Lubuntu Developers <lubuntu-devel@lists.ubuntu.com>
+Copyright: 2021-2025 Lubuntu Developers <lubuntu-devel@lists.ubuntu.com>
            2015      ChangZhuo Chen (陳昌倬) <czchen@debian.org>
            2015      Yukiharu YABUKI <yyabuki@debian.org>
            2014-2019 Alf Gaida <agaida@siduction.org>
@@ -16,7 +16,7 @@ Copyright: 2021-2024 Lubuntu Developers <lubuntu-devel@lists.ubuntu.com>
            2019-2021 apt-ghetto <apt-ghetto@protonmail.com>
            2021      Dan Simmons <kc2bez@lubuntu.me>
            2018-2025 Simon Quigley <tsimonq2@ubuntu.com>
-           2023      Aaron Rainbolt <arraybolt3@gmail.com>
+           2023-2025 Aaron Rainbolt <arraybolt3@gmail.com>
 License: LGPL-2.1+
 
 License: LGPL-2.1+
