@@ -9,13 +9,13 @@ Uploaders: Alf Gaida <agaida@siduction.org>,
            Aaron Rainbolt <arraybolt3@gmail.com>
 Section: x11
 Build-Depends: debhelper-compat (= 13),
-               libdbusmenu-lxqt0-dev (>= 0.3.0),
-               libfm-qt6-dev (>= 2.3.0),
+               libdbusmenu-lxqt0-dev (>= 0.4.0),
+               libfm-qt6-dev (>= 2.4.0),
                libkf6windowsystem-dev,
-               libqt6xdg-dev (>= 4.3.0),
-               libqt6xdgiconloader-dev (>= 4.3.0),
+               libqt6xdg-dev (>= 4.4.0),
+               libqt6xdgiconloader-dev (>= 4.4.0),
                libx11-dev,
-               lxqt-build-tools (>= 2.3.0),
+               lxqt-build-tools (>= 2.4.0),
                qt6-base-private-dev (>= 6.6.0),
                qt6-svg-dev (>= 6.6.0)
 Standards-Version: 4.7.4
