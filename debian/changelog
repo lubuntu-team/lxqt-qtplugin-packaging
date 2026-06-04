@@ -1,3 +1,9 @@
+lxqt-qtplugin (2.4.0-0ubuntu2) stonking; urgency=medium
+
+  * Fix libfm-qt binary dependency.
+
+ -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Thu, 04 Jun 2026 13:03:37 -0400
+
 lxqt-qtplugin (2.4.0-0ubuntu1) stonking; urgency=medium
 
   [ Simon Quigley ]
